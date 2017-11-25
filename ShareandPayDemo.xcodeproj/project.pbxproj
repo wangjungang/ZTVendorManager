@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5360EC091F39979A009F037C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5360EC081F39979A009F037C /* main.m */; };
+		5360EC0C1F39979A009F037C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5360EC0B1F39979A009F037C /* AppDelegate.m */; };
+		5360EC0F1F39979A009F037C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5360EC0E1F39979A009F037C /* ViewController.m */; };
+		5360EC121F39979A009F037C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5360EC101F39979A009F037C /* Main.storyboard */; };
+		5360EC141F39979A009F037C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5360EC131F39979A009F037C /* Assets.xcassets */; };
+		5360EC171F39979A009F037C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5360EC151F39979A009F037C /* LaunchScreen.storyboard */; };
+		5360EC221F39979A009F037C /* ShareandPayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5360EC211F39979A009F037C /* ShareandPayDemoTests.m */; };
+		5360EC2D1F39979A009F037C /* ShareandPayDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5360EC2C1F39979A009F037C /* ShareandPayDemoUITests.m */; };
+		5360EC661F3997AB009F037C /* AppDelegate+ZTVendorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5360EC3D1F3997AB009F037C /* AppDelegate+ZTVendorHelper.m */; };
+		5360EC671F3997AB009F037C /* ZTVendorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5360EC3F1F3997AB009F037C /* ZTVendorManager.m */; };
+		5360EC681F3997AB009F037C /* ZTVendorPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5360EC411F3997AB009F037C /* ZTVendorPayManager.m */; };
+		5360EC691F3997AB009F037C /* ZTWXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5360EC431F3997AB009F037C /* ZTWXApiManager.m */; };
+		5360EC6A1F3997AB009F037C /* ZTVendorAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5360EC461F3997AB009F037C /* ZTVendorAccountModel.m */; };
+		5360EC6B1F3997AB009F037C /* ZTVendorPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5360EC481F3997AB009F037C /* ZTVendorPayModel.m */; };
+		5360EC6C1F3997AB009F037C /* ZTVendorShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5360EC4A1F3997AB009F037C /* ZTVendorShareModel.m */; };
+		5360EC6D1F3997AB009F037C /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5360EC4D1F3997AB009F037C /* AlipaySDK.bundle */; };
+		5360EC6E1F3997AB009F037C /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360EC4E1F3997AB009F037C /* AlipaySDK.framework */; };
+		5360EC6F1F3997AB009F037C /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360EC501F3997AB009F037C /* libSocialQQ.a */; };
+		5360EC701F3997AB009F037C /* libSocialSina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360EC531F3997AB009F037C /* libSocialSina.a */; };
+		5360EC711F3997AC009F037C /* UMSocialCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360EC571F3997AB009F037C /* UMSocialCore.framework */; };
+		5360EC721F3997AC009F037C /* UMSocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360EC581F3997AB009F037C /* UMSocialNetwork.framework */; };
+		5360EC731F3997AC009F037C /* UMSocialSDKPromptResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5360EC591F3997AB009F037C /* UMSocialSDKPromptResources.bundle */; };
+		5360EC741F3997AC009F037C /* libUMSocialLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360EC5B1F3997AB009F037C /* libUMSocialLog.a */; };
+		5360EC751F3997AC009F037C /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360EC5D1F3997AB009F037C /* libSocialWeChat.a */; };
+		5360EC761F3997AC009F037C /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360EC601F3997AB009F037C /* libWeChatSDK.a */; };
+		5360EC771F3997AC009F037C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5360EC611F3997AB009F037C /* README.txt */; };
+		5360EC7A1F3997D6009F037C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360EC791F3997D6009F037C /* CoreMotion.framework */; };
+		5360EC7C1F3997E0009F037C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360EC7B1F3997E0009F037C /* SystemConfiguration.framework */; };
+		5360EC7E1F3997E9009F037C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360EC7D1F3997E9009F037C /* CoreTelephony.framework */; };
+		5360EC801F399816009F037C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360EC7F1F399816009F037C /* libz.tbd */; };
+		5360EC821F399824009F037C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360EC811F399824009F037C /* libsqlite3.tbd */; };
+		5360EC841F39982D009F037C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5360EC831F39982D009F037C /* libc++.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5360EC1E1F39979A009F037C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5360EBFC1F39979A009F037C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5360EC031F39979A009F037C;
+			remoteInfo = ShareandPayDemo;
+		};
+		5360EC291F39979A009F037C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5360EBFC1F39979A009F037C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5360EC031F39979A009F037C;
+			remoteInfo = ShareandPayDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5360EC041F39979A009F037C /* ShareandPayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareandPayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5360EC081F39979A009F037C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5360EC0A1F39979A009F037C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5360EC0B1F39979A009F037C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5360EC0D1F39979A009F037C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5360EC0E1F39979A009F037C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5360EC111F39979A009F037C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5360EC131F39979A009F037C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5360EC161F39979A009F037C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5360EC181F39979A009F037C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5360EC1D1F39979A009F037C /* ShareandPayDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareandPayDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5360EC211F39979A009F037C /* ShareandPayDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareandPayDemoTests.m; sourceTree = "<group>"; };
+		5360EC231F39979A009F037C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5360EC281F39979A009F037C /* ShareandPayDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareandPayDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5360EC2C1F39979A009F037C /* ShareandPayDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareandPayDemoUITests.m; sourceTree = "<group>"; };
+		5360EC2E1F39979A009F037C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5360EC3C1F3997AB009F037C /* AppDelegate+ZTVendorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ZTVendorHelper.h"; sourceTree = "<group>"; };
+		5360EC3D1F3997AB009F037C /* AppDelegate+ZTVendorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ZTVendorHelper.m"; sourceTree = "<group>"; };
+		5360EC3E1F3997AB009F037C /* ZTVendorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVendorManager.h; sourceTree = "<group>"; };
+		5360EC3F1F3997AB009F037C /* ZTVendorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVendorManager.m; sourceTree = "<group>"; };
+		5360EC401F3997AB009F037C /* ZTVendorPayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVendorPayManager.h; sourceTree = "<group>"; };
+		5360EC411F3997AB009F037C /* ZTVendorPayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVendorPayManager.m; sourceTree = "<group>"; };
+		5360EC421F3997AB009F037C /* ZTWXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTWXApiManager.h; sourceTree = "<group>"; };
+		5360EC431F3997AB009F037C /* ZTWXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTWXApiManager.m; sourceTree = "<group>"; };
+		5360EC451F3997AB009F037C /* ZTVendorAccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVendorAccountModel.h; sourceTree = "<group>"; };
+		5360EC461F3997AB009F037C /* ZTVendorAccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVendorAccountModel.m; sourceTree = "<group>"; };
+		5360EC471F3997AB009F037C /* ZTVendorPayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVendorPayModel.h; sourceTree = "<group>"; };
+		5360EC481F3997AB009F037C /* ZTVendorPayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVendorPayModel.m; sourceTree = "<group>"; };
+		5360EC491F3997AB009F037C /* ZTVendorShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVendorShareModel.h; sourceTree = "<group>"; };
+		5360EC4A1F3997AB009F037C /* ZTVendorShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVendorShareModel.m; sourceTree = "<group>"; };
+		5360EC4D1F3997AB009F037C /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		5360EC4E1F3997AB009F037C /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		5360EC501F3997AB009F037C /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
+		5360EC511F3997AB009F037C /* UMSocialQQHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialQQHandler.h; sourceTree = "<group>"; };
+		5360EC531F3997AB009F037C /* libSocialSina.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSina.a; sourceTree = "<group>"; };
+		5360EC541F3997AB009F037C /* UMSocialSinaHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSinaHandler.h; sourceTree = "<group>"; };
+		5360EC571F3997AB009F037C /* UMSocialCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialCore.framework; sourceTree = "<group>"; };
+		5360EC581F3997AB009F037C /* UMSocialNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialNetwork.framework; sourceTree = "<group>"; };
+		5360EC591F3997AB009F037C /* UMSocialSDKPromptResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKPromptResources.bundle; sourceTree = "<group>"; };
+		5360EC5B1F3997AB009F037C /* libUMSocialLog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocialLog.a; sourceTree = "<group>"; };
+		5360EC5D1F3997AB009F037C /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWeChat.a; sourceTree = "<group>"; };
+		5360EC5E1F3997AB009F037C /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		5360EC601F3997AB009F037C /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		5360EC611F3997AB009F037C /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		5360EC621F3997AB009F037C /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		5360EC631F3997AB009F037C /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		5360EC641F3997AB009F037C /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		5360EC651F3997AB009F037C /* ZTVendorManagerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVendorManagerConfig.h; sourceTree = "<group>"; };
+		5360EC791F3997D6009F037C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		5360EC7B1F3997E0009F037C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5360EC7D1F3997E9009F037C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		5360EC7F1F399816009F037C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5360EC811F399824009F037C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		5360EC831F39982D009F037C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5360EC011F39979A009F037C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5360EC841F39982D009F037C /* libc++.tbd in Frameworks */,
+				5360EC821F399824009F037C /* libsqlite3.tbd in Frameworks */,
+				5360EC801F399816009F037C /* libz.tbd in Frameworks */,
+				5360EC7E1F3997E9009F037C /* CoreTelephony.framework in Frameworks */,
+				5360EC7C1F3997E0009F037C /* SystemConfiguration.framework in Frameworks */,
+				5360EC7A1F3997D6009F037C /* CoreMotion.framework in Frameworks */,
+				5360EC711F3997AC009F037C /* UMSocialCore.framework in Frameworks */,
+				5360EC6F1F3997AB009F037C /* libSocialQQ.a in Frameworks */,
+				5360EC761F3997AC009F037C /* libWeChatSDK.a in Frameworks */,
+				5360EC721F3997AC009F037C /* UMSocialNetwork.framework in Frameworks */,
+				5360EC751F3997AC009F037C /* libSocialWeChat.a in Frameworks */,
+				5360EC741F3997AC009F037C /* libUMSocialLog.a in Frameworks */,
+				5360EC6E1F3997AB009F037C /* AlipaySDK.framework in Frameworks */,
+				5360EC701F3997AB009F037C /* libSocialSina.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5360EC1A1F39979A009F037C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5360EC251F39979A009F037C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5360EBFB1F39979A009F037C = {
+			isa = PBXGroup;
+			children = (
+				5360EC061F39979A009F037C /* ShareandPayDemo */,
+				5360EC201F39979A009F037C /* ShareandPayDemoTests */,
+				5360EC2B1F39979A009F037C /* ShareandPayDemoUITests */,
+				5360EC051F39979A009F037C /* Products */,
+				5360EC781F3997D6009F037C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5360EC051F39979A009F037C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC041F39979A009F037C /* ShareandPayDemo.app */,
+				5360EC1D1F39979A009F037C /* ShareandPayDemoTests.xctest */,
+				5360EC281F39979A009F037C /* ShareandPayDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5360EC061F39979A009F037C /* ShareandPayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC0A1F39979A009F037C /* AppDelegate.h */,
+				5360EC0B1F39979A009F037C /* AppDelegate.m */,
+				5360EC0D1F39979A009F037C /* ViewController.h */,
+				5360EC0E1F39979A009F037C /* ViewController.m */,
+				5360EC101F39979A009F037C /* Main.storyboard */,
+				5360EC3A1F3997AB009F037C /* ZTVendorManager */,
+				5360EC131F39979A009F037C /* Assets.xcassets */,
+				5360EC151F39979A009F037C /* LaunchScreen.storyboard */,
+				5360EC181F39979A009F037C /* Info.plist */,
+				5360EC071F39979A009F037C /* Supporting Files */,
+			);
+			path = ShareandPayDemo;
+			sourceTree = "<group>";
+		};
+		5360EC071F39979A009F037C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC081F39979A009F037C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5360EC201F39979A009F037C /* ShareandPayDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC211F39979A009F037C /* ShareandPayDemoTests.m */,
+				5360EC231F39979A009F037C /* Info.plist */,
+			);
+			path = ShareandPayDemoTests;
+			sourceTree = "<group>";
+		};
+		5360EC2B1F39979A009F037C /* ShareandPayDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC2C1F39979A009F037C /* ShareandPayDemoUITests.m */,
+				5360EC2E1F39979A009F037C /* Info.plist */,
+			);
+			path = ShareandPayDemoUITests;
+			sourceTree = "<group>";
+		};
+		5360EC3A1F3997AB009F037C /* ZTVendorManager */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC3B1F3997AB009F037C /* Manager */,
+				5360EC441F3997AB009F037C /* Model */,
+				5360EC4B1F3997AB009F037C /* VendorSDK */,
+				5360EC651F3997AB009F037C /* ZTVendorManagerConfig.h */,
+			);
+			path = ZTVendorManager;
+			sourceTree = "<group>";
+		};
+		5360EC3B1F3997AB009F037C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC3C1F3997AB009F037C /* AppDelegate+ZTVendorHelper.h */,
+				5360EC3D1F3997AB009F037C /* AppDelegate+ZTVendorHelper.m */,
+				5360EC3E1F3997AB009F037C /* ZTVendorManager.h */,
+				5360EC3F1F3997AB009F037C /* ZTVendorManager.m */,
+				5360EC401F3997AB009F037C /* ZTVendorPayManager.h */,
+				5360EC411F3997AB009F037C /* ZTVendorPayManager.m */,
+				5360EC421F3997AB009F037C /* ZTWXApiManager.h */,
+				5360EC431F3997AB009F037C /* ZTWXApiManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5360EC441F3997AB009F037C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC451F3997AB009F037C /* ZTVendorAccountModel.h */,
+				5360EC461F3997AB009F037C /* ZTVendorAccountModel.m */,
+				5360EC471F3997AB009F037C /* ZTVendorPayModel.h */,
+				5360EC481F3997AB009F037C /* ZTVendorPayModel.m */,
+				5360EC491F3997AB009F037C /* ZTVendorShareModel.h */,
+				5360EC4A1F3997AB009F037C /* ZTVendorShareModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5360EC4B1F3997AB009F037C /* VendorSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC4C1F3997AB009F037C /* AlipaySDK */,
+				5360EC4F1F3997AB009F037C /* QQ */,
+				5360EC521F3997AB009F037C /* Sina */,
+				5360EC551F3997AB009F037C /* UMSocial */,
+				5360EC5C1F3997AB009F037C /* WeChat */,
+			);
+			path = VendorSDK;
+			sourceTree = "<group>";
+		};
+		5360EC4C1F3997AB009F037C /* AlipaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC4D1F3997AB009F037C /* AlipaySDK.bundle */,
+				5360EC4E1F3997AB009F037C /* AlipaySDK.framework */,
+			);
+			path = AlipaySDK;
+			sourceTree = "<group>";
+		};
+		5360EC4F1F3997AB009F037C /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC501F3997AB009F037C /* libSocialQQ.a */,
+				5360EC511F3997AB009F037C /* UMSocialQQHandler.h */,
+			);
+			path = QQ;
+			sourceTree = "<group>";
+		};
+		5360EC521F3997AB009F037C /* Sina */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC531F3997AB009F037C /* libSocialSina.a */,
+				5360EC541F3997AB009F037C /* UMSocialSinaHandler.h */,
+			);
+			path = Sina;
+			sourceTree = "<group>";
+		};
+		5360EC551F3997AB009F037C /* UMSocial */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC561F3997AB009F037C /* UMSocialSDK */,
+				5360EC5A1F3997AB009F037C /* UMSocialSDKPlugin */,
+			);
+			path = UMSocial;
+			sourceTree = "<group>";
+		};
+		5360EC561F3997AB009F037C /* UMSocialSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC571F3997AB009F037C /* UMSocialCore.framework */,
+				5360EC581F3997AB009F037C /* UMSocialNetwork.framework */,
+				5360EC591F3997AB009F037C /* UMSocialSDKPromptResources.bundle */,
+			);
+			path = UMSocialSDK;
+			sourceTree = "<group>";
+		};
+		5360EC5A1F3997AB009F037C /* UMSocialSDKPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC5B1F3997AB009F037C /* libUMSocialLog.a */,
+			);
+			path = UMSocialSDKPlugin;
+			sourceTree = "<group>";
+		};
+		5360EC5C1F3997AB009F037C /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC5D1F3997AB009F037C /* libSocialWeChat.a */,
+				5360EC5E1F3997AB009F037C /* UMSocialWechatHandler.h */,
+				5360EC5F1F3997AB009F037C /* WechatSDK */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		5360EC5F1F3997AB009F037C /* WechatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC601F3997AB009F037C /* libWeChatSDK.a */,
+				5360EC611F3997AB009F037C /* README.txt */,
+				5360EC621F3997AB009F037C /* WechatAuthSDK.h */,
+				5360EC631F3997AB009F037C /* WXApi.h */,
+				5360EC641F3997AB009F037C /* WXApiObject.h */,
+			);
+			path = WechatSDK;
+			sourceTree = "<group>";
+		};
+		5360EC781F3997D6009F037C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5360EC831F39982D009F037C /* libc++.tbd */,
+				5360EC811F399824009F037C /* libsqlite3.tbd */,
+				5360EC7F1F399816009F037C /* libz.tbd */,
+				5360EC7D1F3997E9009F037C /* CoreTelephony.framework */,
+				5360EC7B1F3997E0009F037C /* SystemConfiguration.framework */,
+				5360EC791F3997D6009F037C /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5360EC031F39979A009F037C /* ShareandPayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5360EC311F39979A009F037C /* Build configuration list for PBXNativeTarget "ShareandPayDemo" */;
+			buildPhases = (
+				5360EC001F39979A009F037C /* Sources */,
+				5360EC011F39979A009F037C /* Frameworks */,
+				5360EC021F39979A009F037C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareandPayDemo;
+			productName = ShareandPayDemo;
+			productReference = 5360EC041F39979A009F037C /* ShareandPayDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5360EC1C1F39979A009F037C /* ShareandPayDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5360EC341F39979A009F037C /* Build configuration list for PBXNativeTarget "ShareandPayDemoTests" */;
+			buildPhases = (
+				5360EC191F39979A009F037C /* Sources */,
+				5360EC1A1F39979A009F037C /* Frameworks */,
+				5360EC1B1F39979A009F037C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5360EC1F1F39979A009F037C /* PBXTargetDependency */,
+			);
+			name = ShareandPayDemoTests;
+			productName = ShareandPayDemoTests;
+			productReference = 5360EC1D1F39979A009F037C /* ShareandPayDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5360EC271F39979A009F037C /* ShareandPayDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5360EC371F39979A009F037C /* Build configuration list for PBXNativeTarget "ShareandPayDemoUITests" */;
+			buildPhases = (
+				5360EC241F39979A009F037C /* Sources */,
+				5360EC251F39979A009F037C /* Frameworks */,
+				5360EC261F39979A009F037C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5360EC2A1F39979A009F037C /* PBXTargetDependency */,
+			);
+			name = ShareandPayDemoUITests;
+			productName = ShareandPayDemoUITests;
+			productReference = 5360EC281F39979A009F037C /* ShareandPayDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5360EBFC1F39979A009F037C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = wangjungang;
+				TargetAttributes = {
+					5360EC031F39979A009F037C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = GZJLNU22Y5;
+						ProvisioningStyle = Automatic;
+					};
+					5360EC1C1F39979A009F037C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = GZJLNU22Y5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5360EC031F39979A009F037C;
+					};
+					5360EC271F39979A009F037C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = GZJLNU22Y5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5360EC031F39979A009F037C;
+					};
+				};
+			};
+			buildConfigurationList = 5360EBFF1F39979A009F037C /* Build configuration list for PBXProject "ShareandPayDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5360EBFB1F39979A009F037C;
+			productRefGroup = 5360EC051F39979A009F037C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5360EC031F39979A009F037C /* ShareandPayDemo */,
+				5360EC1C1F39979A009F037C /* ShareandPayDemoTests */,
+				5360EC271F39979A009F037C /* ShareandPayDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5360EC021F39979A009F037C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5360EC731F3997AC009F037C /* UMSocialSDKPromptResources.bundle in Resources */,
+				5360EC171F39979A009F037C /* LaunchScreen.storyboard in Resources */,
+				5360EC141F39979A009F037C /* Assets.xcassets in Resources */,
+				5360EC6D1F3997AB009F037C /* AlipaySDK.bundle in Resources */,
+				5360EC771F3997AC009F037C /* README.txt in Resources */,
+				5360EC121F39979A009F037C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5360EC1B1F39979A009F037C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5360EC261F39979A009F037C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5360EC001F39979A009F037C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5360EC6B1F3997AB009F037C /* ZTVendorPayModel.m in Sources */,
+				5360EC6C1F3997AB009F037C /* ZTVendorShareModel.m in Sources */,
+				5360EC681F3997AB009F037C /* ZTVendorPayManager.m in Sources */,
+				5360EC0F1F39979A009F037C /* ViewController.m in Sources */,
+				5360EC0C1F39979A009F037C /* AppDelegate.m in Sources */,
+				5360EC6A1F3997AB009F037C /* ZTVendorAccountModel.m in Sources */,
+				5360EC671F3997AB009F037C /* ZTVendorManager.m in Sources */,
+				5360EC661F3997AB009F037C /* AppDelegate+ZTVendorHelper.m in Sources */,
+				5360EC691F3997AB009F037C /* ZTWXApiManager.m in Sources */,
+				5360EC091F39979A009F037C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5360EC191F39979A009F037C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5360EC221F39979A009F037C /* ShareandPayDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5360EC241F39979A009F037C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5360EC2D1F39979A009F037C /* ShareandPayDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5360EC1F1F39979A009F037C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5360EC031F39979A009F037C /* ShareandPayDemo */;
+			targetProxy = 5360EC1E1F39979A009F037C /* PBXContainerItemProxy */;
+		};
+		5360EC2A1F39979A009F037C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5360EC031F39979A009F037C /* ShareandPayDemo */;
+			targetProxy = 5360EC291F39979A009F037C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5360EC101F39979A009F037C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5360EC111F39979A009F037C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5360EC151F39979A009F037C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5360EC161F39979A009F037C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5360EC2F1F39979A009F037C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5360EC301F39979A009F037C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5360EC321F39979A009F037C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GZJLNU22Y5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShareandPayDemo/ZTVendorManager/VendorSDK/AlipaySDK",
+					"$(PROJECT_DIR)/ShareandPayDemo/ZTVendorManager/VendorSDK/UMSocial/UMSocialSDK",
+				);
+				INFOPLIST_FILE = ShareandPayDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShareandPayDemo/ZTVendorManager/VendorSDK/QQ",
+					"$(PROJECT_DIR)/ShareandPayDemo/ZTVendorManager/VendorSDK/Sina",
+					"$(PROJECT_DIR)/ShareandPayDemo/ZTVendorManager/VendorSDK/UMSocial/UMSocialSDKPlugin",
+					"$(PROJECT_DIR)/ShareandPayDemo/ZTVendorManager/VendorSDK/WeChat",
+					"$(PROJECT_DIR)/ShareandPayDemo/ZTVendorManager/VendorSDK/WeChat/WechatSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjungang.ShareandPayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5360EC331F39979A009F037C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GZJLNU22Y5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShareandPayDemo/ZTVendorManager/VendorSDK/AlipaySDK",
+					"$(PROJECT_DIR)/ShareandPayDemo/ZTVendorManager/VendorSDK/UMSocial/UMSocialSDK",
+				);
+				INFOPLIST_FILE = ShareandPayDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShareandPayDemo/ZTVendorManager/VendorSDK/QQ",
+					"$(PROJECT_DIR)/ShareandPayDemo/ZTVendorManager/VendorSDK/Sina",
+					"$(PROJECT_DIR)/ShareandPayDemo/ZTVendorManager/VendorSDK/UMSocial/UMSocialSDKPlugin",
+					"$(PROJECT_DIR)/ShareandPayDemo/ZTVendorManager/VendorSDK/WeChat",
+					"$(PROJECT_DIR)/ShareandPayDemo/ZTVendorManager/VendorSDK/WeChat/WechatSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjungang.ShareandPayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5360EC351F39979A009F037C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GZJLNU22Y5;
+				INFOPLIST_FILE = ShareandPayDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjungang.ShareandPayDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareandPayDemo.app/ShareandPayDemo";
+			};
+			name = Debug;
+		};
+		5360EC361F39979A009F037C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GZJLNU22Y5;
+				INFOPLIST_FILE = ShareandPayDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjungang.ShareandPayDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareandPayDemo.app/ShareandPayDemo";
+			};
+			name = Release;
+		};
+		5360EC381F39979A009F037C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GZJLNU22Y5;
+				INFOPLIST_FILE = ShareandPayDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjungang.ShareandPayDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ShareandPayDemo;
+			};
+			name = Debug;
+		};
+		5360EC391F39979A009F037C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GZJLNU22Y5;
+				INFOPLIST_FILE = ShareandPayDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjungang.ShareandPayDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ShareandPayDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5360EBFF1F39979A009F037C /* Build configuration list for PBXProject "ShareandPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5360EC2F1F39979A009F037C /* Debug */,
+				5360EC301F39979A009F037C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5360EC311F39979A009F037C /* Build configuration list for PBXNativeTarget "ShareandPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5360EC321F39979A009F037C /* Debug */,
+				5360EC331F39979A009F037C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5360EC341F39979A009F037C /* Build configuration list for PBXNativeTarget "ShareandPayDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5360EC351F39979A009F037C /* Debug */,
+				5360EC361F39979A009F037C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5360EC371F39979A009F037C /* Build configuration list for PBXNativeTarget "ShareandPayDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5360EC381F39979A009F037C /* Debug */,
+				5360EC391F39979A009F037C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5360EBFC1F39979A009F037C /* Project object */;
+}
